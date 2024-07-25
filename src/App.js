@@ -3,14 +3,14 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Menu from '../Menu';
-import Home from '../Home';
-import Recipe from '../Recipe';
-import Error from '../Error';
-import Loading from '../Loading';
-import { fetchRecipes } from '../../actions/recipes';
+import Menu from './components/Menu';
+import Home from './components/Home';
+import Recipe from './components/Recipe';
+import Error from './components/Error';
+import Loading from './components/Loading';
+import { fetchRecipes } from './actions/recipes';
 
-import './style.scss';
+import './App.scss';
 
 function App({ loading = false }) {
   const dispatch = useDispatch();
