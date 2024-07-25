@@ -9,15 +9,15 @@ import { FETCH_RECIPES, saveRecipes } from '../actions/recipes'; // Adjust impor
 const recipes = (store) => (next) => (action) => {
   switch (action.type) {
     case FETCH_RECIPES: {  
-      axios.get('http://localhost:3001/recipes')
-        .then((response) => {
-          // Dispatch action to save recipes to Redux store
-          store.dispatch(saveRecipes(response.data)); // Use store.dispatch to dispatch actions
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-      next(action);
+      // axios.get('http://localhost:3001/recipes')
+      //   .then((response) => {
+      //     // Dispatch action to save recipes to Redux store
+      //     store.dispatch(saveRecipes(response.data)); // Use store.dispatch to dispatch actions
+      //   })
+      //   .catch((error) => {
+      //     console.log(error);
+      //   });
+      // next(action);
       break;
     }
 
